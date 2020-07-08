@@ -6,9 +6,23 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #f1f1f1;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+}
+.wrapper #sideMenu {
+  flex-basis: 15%;
+}
+.wrapper .content-filter {
+  flex-basis: 85%;
+}
+
 /*** Menu ***/
 #sideMenu {
   background: #4ba8c4;
@@ -27,7 +41,7 @@ body {
   padding: 15px 30px;
   transition: all 0.3s ease-in-out;
 }
-#sideMenu nav a:hover{
+#sideMenu nav a:hover {
   background: #3f96b1;
   border-left: 5px solid chartreuse;
   padding: 15px 30px 15px 25px;
@@ -43,3 +57,91 @@ body {
   width: 30px;
 }
 
+/***Filter***/
+
+.content-filter {
+  margin: 30px;
+  margin-left: 310px;
+  /* height: 200px; */
+  background: white;
+  border-radius: 5px;
+}
+
+.header-filter {
+  font-weight: 500;
+  border-bottom: 2px dashed #c9c3c3;
+  width: 65px;
+  margin: 15px;
+}
+
+.header-filter p {
+  display: flex;
+}
+.header-filter p .fas {
+  color: #c9c3c3;
+  padding-left: 15px;
+  top: 10px;
+}
+
+.filter {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.filter .s {
+  color: #c9c3c3;
+  padding-left: 20px;
+}
+
+.filter .s input {
+  border: none;
+  border-bottom: 2px dashed #c9c3c3;
+  width: 115px;
+  padding: 6px;
+}
+
+.filter .s input::placeholder {
+  color: #4ba8c4;
+}
+
+.filter .id {
+  color: #c9c3c3;
+  padding-left: 20px;
+}
+
+.filter .id input {
+  border: 1px solid #c9c3c3;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.filter .name {
+  color: #c9c3c3;
+  padding-left: 20px;
+  padding-top: 19px;
+}
+
+.filter .name input {
+  border: 1px solid #c9c3c3;
+  padding: 6px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.filter .name input::placeholder {
+  color: #c9c3c3;
+}
+
+.filter .button {
+  background: #4ba8c4;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: 20px;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 19px;
+}

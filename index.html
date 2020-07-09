@@ -11,6 +11,8 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 </head>
 <body>
     <div class="wrapper">
+
+        <!-- Menu -->
         <section id="sideMenu">        
             <nav>            
                 <a href=""><i class="fas fa-plus-circle"></i>Заказать доставку</a>
@@ -23,39 +25,244 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
                 <a href=""><i class="fas fa-long-arrow-alt-left"></i>Вернуться на сайт</a>
             </nav>
         </section>
+        <!-- End Menu -->
+        <!-- Contener -->
+        <div class="contener">
+            <!-- content-filter -->
+            <section class="content-filter">
+                <div class="header-filter">
+                    <p>Фильтер<i class="fas fa-caret-up"></i></p>                     
+                </div>
+               
+                <div class="filter">
+                    <div class="s">
+                        <p>C</p>
+                        <input type="text" placeholder="04.12.2019 10:00">
+                    </div>
+                    <div class="s">
+                        <p>По</p>
+                        <input type="text" placeholder="04.12.2019 10:00">
+                    </div>
+                    <div class="id">
+                        <p>Внешний ID</p>
+                        <input type="text" placeholder="1289239296" size="10px">
+                    </div>
+                    <div class="id">
+                        <p>ID доставки</p>
+                        <input type="text" placeholder="2818297" size="10px">
+                    </div>
+                    <div class="id">
+                        <p>ID группы</p>
+                        <input type="text" placeholder="2818296" size="10px">
+                    </div>
+                    <div class="name">
+                        <input type="text" placeholder="Наименование">
+                    </div>
+                    <input class="button" type="submit" value="Найти">
+                </div>            
+            </section>
+            <!-- End content-filter -->
+            <!-- grup -->
+            <section class="grup">
+                <div class="grup-header">
+                    <p><i class="fas fa-redo-alt"></i>Повторить группы</p>
+                    <p><i class="far fa-check-circle"></i>Закрыть группу</p>
+                    <p class="p-grup">№ группу 2695</p>
+                </div>
+                <div class="grup-block">
+                    <div class="grup-zakaz">
+                        <p class="running"><i class="fas fa-running"></i>Курьер у оправителя</p>
+                        <p class="faktyr">Счёт-фактуры контрагентам</p>
+                        <div class="grup-zakaz-data">
+                            <p>№ 336837</p>
+                            <p class="data">20 июня 2018<i class="far fa-clock"></i>16:20</p>
+                        </div>
+                    </div>
+                    <div class="grup-price">
+                        <div class="price">
+                            <p class="sum">840 <i class="fas fa-ruble-sign"></i></p>
+                            <p>стоимость</p>
+                        </div>
+                        <div claass="massa">
+                            <p class="kg">3 кг</p>
+                            <p>вес</p>
+                        </div>                        
+                    </div>
+                    <div class="grup-info">
+                        <p><span class="select">Оправитель:</span> Константин Александрович, +7 863 754-19-90
+                            м. Белоруская, 5-я Ямского Поля ул., 7 корпус 2, Москва
+                        </p>
+                        <p><span class="select">Получатель:</span> Анастасия Романова, +7 921 150-80-30
+                            м. Динамо, ул. Верхняя Масловка, 25 корпус 1, Москва
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="content-filter">
-            <div class="header-filter">
-                <P>Фильтер<i class="fas fa-caret-up"></i></P>                
-            </div>
-            <div class="filter">
-                <div class="s">
-                    <p>C</p>
-                    <input type="text" placeholder="04.12.2019 10:00">
+            <section class="grup">
+                <div class="grup-header">
+                    <p><i class="fas fa-redo-alt"></i>Повторить</p>
+                    <p><i class="far fa-check-circle"></i>Закрыть</p>
                 </div>
-                <div class="s">
-                    <p>По</p>
-                    <input type="text" placeholder="04.12.2019 10:00">
+                <div class="grup-block">
+                    <div class="grup-zakaz">
+                        <p class="check"><i class="fas fa-check-circle"></i>Выполнена</p>
+                        <p class="faktyr">NDG Absolute Origin</p>
+                        <div class="grup-zakaz-data">
+                            <p>№ 336839</p>
+                            <p class="data">18 июня 2018<i class="far fa-clock"></i>18:30</p>
+                        </div>
+                    </div>
+                    <div class="grup-price">
+                        <div class="price">
+                            <p class="sum">360<i class="fas fa-ruble-sign"></i></p>
+                            <p>стоимость</p>
+                        </div>
+                        <div claass="massa">
+                            <p class="kg">2 кг</p>
+                            <p>вес</p>
+                        </div>                        
+                    </div>
+                    <div class="grup-info">
+                        <p><span class="select">Оправитель:</span> Константин Александрович, +7 863 754-19-90
+                            м. Белоруская, 5-я Ямского Поля ул., 7 корпус 2, Москва
+                        </p>
+                        <p><span class="select">Получатель:</span> Анастасия Романова, +7 921 150-80-30
+                            м. Динамо, ул. Верхняя Масловка, 25 корпус 1, Москва
+                        </p>
+                    </div>
                 </div>
-                <div class="id">
-                    <p>Внешний ID</p>
-                    <input type="text" placeholder="1289239296" size="10px">
+            </section>
+
+            <section class="grup">
+                <div class="grup-header">
+                    <p><i class="fas fa-redo-alt"></i>Повторить</p>
+                    <p><i class="far fa-check-circle"></i>Закрыть</p>
                 </div>
-                <div class="id">
-                    <p>ID доставки</p>
-                    <input type="text" placeholder="2818297" size="10px">
+                <div class="grup-block">
+                    <div class="grup-zakaz">
+                        <p class="check"><i class="fas fa-check-circle"></i>Выполнена</p>
+                        <p class="faktyr">NDG Absolute Origin</p>
+                        <div class="grup-zakaz-data">
+                            <p>№ 336839</p>
+                            <p class="data">18 июня 2018<i class="far fa-clock"></i>18:30</p>
+                        </div>
+                    </div>
+                    <div class="grup-price">
+                        <div class="price">
+                            <p class="sum">360<i class="fas fa-ruble-sign"></i></p>
+                            <p>стоимость</p>
+                        </div>
+                        <div claass="massa">
+                            <p class="kg">2 кг</p>
+                            <p>вес</p>
+                        </div>                        
+                    </div>
+                    <div class="grup-info">
+                        <p><span class="select">Оправитель:</span> Константин Александрович, +7 863 754-19-90
+                            м. Белоруская, 5-я Ямского Поля ул., 7 корпус 2, Москва
+                        </p>
+                        <p><span class="select">Получатель:</span> Анастасия Романова, +7 921 150-80-30
+                            м. Динамо, ул. Верхняя Масловка, 25 корпус 1, Москва
+                        </p>
+                    </div>
                 </div>
-                <div class="id">
-                    <p>ID группы</p>
-                    <input type="text" placeholder="2818296" size="10px">
+            </section>
+
+            <section class="grup">
+                <div class="grup-header">
+                    <p><i class="fas fa-redo-alt"></i>Повторить</p>
+                    <p><i class="far fa-check-circle"></i>Закрыть</p>
                 </div>
-                <div class="name">
-                    <input type="text" placeholder="Наименование">
+                <div class="grup-block">
+                    <div class="grup-zakaz">
+                        <p class="check"><i class="fas fa-check-circle"></i>Выполнена</p>
+                        <p class="faktyr">NDG Absolute Origin</p>
+                        <div class="grup-zakaz-data">
+                            <p>№ 336839</p>
+                            <p class="data">18 июня 2018<i class="far fa-clock"></i>18:30</p>
+                        </div>
+                    </div>
+                    <div class="grup-price">
+                        <div class="price">
+                            <p class="sum">360<i class="fas fa-ruble-sign"></i></p>
+                            <p>стоимость</p>
+                        </div>
+                        <div claass="massa">
+                            <p class="kg">2 кг</p>
+                            <p>вес</p>
+                        </div>                        
+                    </div>
+                    <div class="grup-info">
+                        <p><span class="select">Оправитель:</span> Константин Александрович, +7 863 754-19-90
+                            м. Белоруская, 5-я Ямского Поля ул., 7 корпус 2, Москва
+                        </p>
+                        <p><span class="select">Получатель:</span> Анастасия Романова, +7 921 150-80-30
+                            м. Динамо, ул. Верхняя Масловка, 25 корпус 1, Москва
+                        </p>
+                    </div>
                 </div>
-                <input class="button" type="submit" value="Найти">
-            </div>
-            
-        </section>
+                
+
+            </section>
+            <section class="grup">
+                <div class="grup-header">
+                    <p><i class="fas fa-redo-alt"></i>Повторить</p>
+                    <p><i class="far fa-check-circle"></i>Закрыть</p>
+                </div>
+                <div class="grup-block">
+                    <div class="grup-zakaz">
+                        <p class="check"><i class="fas fa-check-circle"></i>Выполнена</p>
+                        <p class="faktyr">NDG Absolute Origin</p>
+                        <div class="grup-zakaz-data">
+                            <p>№ 336839</p>
+                            <p class="data">18 июня 2018<i class="far fa-clock"></i>18:30</p>
+                        </div>
+                    </div>
+                    <div class="grup-price">
+                        <div class="price">
+                            <p class="sum">360<i class="fas fa-ruble-sign"></i></p>
+                            <p>стоимость</p>
+                        </div>
+                        <div claass="massa">
+                            <p class="kg">2 кг</p>
+                            <p>вес</p>
+                        </div>                        
+                    </div>
+                    <div class="grup-info">
+                        <p><span class="select">Оправитель:</span> Константин Александрович, +7 863 754-19-90
+                            м. Белоруская, 5-я Ямского Поля ул., 7 корпус 2, Москва
+                        </p>
+                        <p><span class="select">Получатель:</span> Анастасия Романова, +7 921 150-80-30
+                            м. Динамо, ул. Верхняя Масловка, 25 корпус 1, Москва
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- End grup -->
+            <!-- Pagination -->
+            <section class="pagination">
+                <div>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#" class="number">Вперед<i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div class="list">
+                    <p>Показать на странице:</p>
+                    <a href="">25,</a>
+                    <a href="">50,</a>
+                    <a href="">100</a>
+                </div>                
+            </section>
+           <!-- End Pagination -->
+        </div>
+
+        <!-- End contener -->
+        
     </div>
     
    

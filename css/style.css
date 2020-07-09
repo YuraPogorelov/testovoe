@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #f1f1f1;
 }
 
@@ -14,7 +14,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .wrapper #sideMenu {
   flex-basis: 15%;
@@ -57,17 +59,22 @@ body {
   width: 30px;
 }
 
+.contener {
+  display: flex;
+  flex-direction: column;
+}
+
 /***Filter***/
 
 .content-filter {
   margin: 30px;
   margin-left: 310px;
-  /* height: 200px; */
   background: white;
   border-radius: 5px;
 }
 
 .header-filter {
+  display: flex;
   font-weight: 500;
   border-bottom: 2px dashed #c9c3c3;
   width: 65px;
@@ -137,11 +144,171 @@ body {
   text-align: center;
   border: none;
   padding: 10px;
-  width: 100px;
+  width: 80px;
   color: #ffffff;
   font-weight: 700;
   margin-left: 20px;
   border-radius: 5px;
   height: 30px;
   margin-top: 19px;
+  margin-right: 15px;
+}
+/*** Grup ***/
+.grup {
+  margin-left: 310px;
+  background: white;
+  border-radius: 5px;
+  max-width: 985px;
+  margin-bottom: 10px;
+}
+
+.grup-header {
+  margin-top: 10px;
+  margin-left: 15px;
+  display: flex;
+  font-size: 12px;
+  color: #4ba8c4;
+}
+
+.grup-header p {
+  padding-right: 10px;
+}
+
+.grup-header p i {
+  padding-right: 5px;
+}
+
+.grup-header .p-grup {
+  color: #c9c3c3;
+}
+
+.grup-block {
+  display: flex;
+  margin: 10px 15px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grup-zakaz p {
+  margin-bottom: 3px;
+}
+
+.grup-zakaz .running {
+  font-size: 14px;
+  font-weight: 700;
+}
+.grup-zakaz .faktyr {
+  font-size: 12px;
+  color: #6b6a6a;
+}
+.grup-zakaz .running i {
+  margin-right: 5px;
+}
+
+.grup-zakaz .check {
+  font-size: 14px;
+  font-weight: 700;
+}
+.grup-zakaz .check i {
+  margin-right: 5px;
+  color: #4ba8c4;
+}
+
+.grup-zakaz-data {
+  display: flex;
+}
+
+.grup-zakaz-data p {
+  font-size: 12px;
+  color: #4ba8c4;
+  margin-right: 15px;
+}
+
+.grup-zakaz-data .data {
+  color: #c9c3c3;
+}
+
+.grup-zakaz-data .data i {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.grup-price {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #c9c3c3;
+}
+
+.grup-price .price {
+  margin-right: 25px;
+}
+
+.grup-price .price .sum {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.grup-price .massa {
+  padding-right: 15px;
+}
+
+.grup-price .kg {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.grup-info {
+  max-width: 340px;
+  margin-left: 15px;
+  color: #6b6a6a;
+  font-size: 12px;
+  margin-right: 15px;
+  line-height: 1.5em;
+}
+
+.grup-info p {
+  margin-bottom: 3px;
+}
+
+.select {
+  font-weight: 700;
+  color: #000;
+}
+/*** pagination ***/
+.pagination {
+  margin-top: 15px;
+  max-width: 985px;
+  display: flex;
+  margin-left: 310px;
+  justify-content: space-between;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.number {
+  color: #4ba8c4;
+}
+
+.pagination a.number i {
+  padding-left: 10px;
+}
+
+.pagination .list{
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.pagination .list a{
+  padding: 0;
+  color: #3f96b1;
 }
